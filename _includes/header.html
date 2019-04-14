@@ -1,10 +1,10 @@
 <header class="main_header clearfix">
-    <div class="column_large_8 column_large_push_2">
+    <div class="column_large_8  column_large_push_2">
         <div class="row">
-            <div class="logo column_large_1">
+            <div class="logo column_large_1 column_small_12">
                 <img src="{{ site.url }}/assets/img/logo.png" alt="">
             </div>
-            <div class="languge column_large_2 left">
+            <div class="languge column_large_2 column_medium_8 column_small_12 column_small_margin_bottom left">
                 <input type="text" id="search-input" class="input" onkeydown="changeView()" placeholder="جستجو ...">
                 <!-- <select name="" id="" class="input">
                     <option value="">فارسی</option>
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="column_large_12 header_nav">
+            <div class="column_large_12 column_small_hidden  header_nav">
                 <ul>
                     <li class="{% if item.url == page.url %}active{% endif %}">
 
@@ -32,6 +32,7 @@
 
 
             </div>
+
         </div>
     </div>
 </header>
@@ -42,7 +43,8 @@
     {% assign index = index | plus: 1 %}
 
 
-    <figure class="{% if index == 3 %}column_large_6 {% endif %}column_large_3">
+    <figure
+        class="{% if index == 3 %}column_large_6 column_medium_4 column_small_hidden {% endif %}column_large_3 column_medium_4 column_small_hidden">
         <img src="{{ site.url }}/assets/img/{{ lastnews.img_name }}" alt="">
         <figcaption>
             <span class="tag">
@@ -62,7 +64,36 @@
 {%- endif -%}
 <nav class="main_nav clearfix">
 
-    <ul class="column_large_8 column_large_push_2">
+    <div class="column_large_hidden column_medium_hidden column_small_12 header_nav_responsive">
+        <a class="menu_btn column_small_margin_right column_small_margin_top column_small_margin_bottom" ></a>
+
+
+        <ul class="">
+            <li class="{% if item.url == page.url %}active{% endif %}">
+
+                <a href='{{ site.url }}'>صفحه اصلی</a>
+            </li>
+
+            <li>
+                <a href="{{ site.url }}/aboutus.html">درباره ما</a>
+            </li>
+
+            <li>
+                <a href="{{ site.url }}/contactus.html">تماس با ما</a>
+            </li>
+            {% for category in site.categories limit: 8 %}
+
+            <li>
+                <a href="{{site.url}}/category/{{category[0]}}"> {{category[0]}} </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+
+
+
+    </div>
+    <ul class="column_large_8 column_large_push_2 column_small_hidden">
         {% for category in site.categories limit: 8 %}
 
         <li>
@@ -70,7 +101,7 @@
         </li>
         {% endfor %}
 
-      
+
     </ul>
 </nav>
 <script>
@@ -79,13 +110,13 @@
         if (document.getElementById("search-input").value) {
             document.getElementById("search_box").style.display = "none";
             document.getElementById("main_div").style.display = "block";
-            console.log("none",document.getElementById("search-input").value);
+            console.log("none", document.getElementById("search-input").value);
         }
         else {
             document.getElementById("search_box").style.display = "block";
             document.getElementById("main_div").style.display = "none";
-            console.log|("block",document.getElementById("search-input").value);
-         
+            console.log | ("block", document.getElementById("search-input").value);
+
 
         }
     }

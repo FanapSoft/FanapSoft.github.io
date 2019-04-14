@@ -19,10 +19,21 @@ column-responsive(column_count,  column_sizes, queries, column_name='column', $c
           .{column_name}_{name}_{column-name(size)}
               @extend $column
               width: (100% / (column_count / size))
+              display: inline-block; 
           .{column_name}_{name}_push_{column-name(size)}
             right: (100% / (column_count / size))
           .{column_name}_{name}_pull_{column-name(size)}
             left: (100% / (column_count / size))
+          .{column_name}_{name}_hidden 
+              display: none;
+          .{column_name}_{name}_margin_top
+            margin-top: 15px;
+          .{column_name}_{name}_margin_bottom
+            margin-bottom: 15px;
+          .{column_name}_{name}_margin_right
+            margin-right: 15px;
+          .{column_name}_{name}_margin_left
+            margin-left: 15px;
         .{column_name}_{name}_reorder
           left: 0
           right: 0

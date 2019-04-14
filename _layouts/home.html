@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<main class="main column_large_8 column_large_push_2 clearfix">
+<main class="main column_large_8 column_medium_8 column_small_8 column_large_push_2 clearfix">
   
   
   {% for category in site.categories %}
@@ -13,7 +13,7 @@ layout: default
       <a href="{{site.url}}/category/{{ category | first }}/">ادامه بیشتر از دسته بندی</a>
     </header>
     <div class="row">
-      <div class="column_large_8">
+      <div class="column_large_8  column_medium_12 column_small_12 ">
         <div class="news">
           <figure>
             <img src="{{ site.url }}/assets/img/{{ category.last[0].img_name }}" alt="">
@@ -31,7 +31,7 @@ layout: default
           </figure>
         </div>
       </div>
-      <div class="column_large_4">
+      <div class="column_large_4  column_medium_hidden column_small_hidden">
         {%- if category.last[1] -%}
         <div class="column_large_12">
           <div class="news hast_margin">
@@ -82,7 +82,7 @@ layout: default
   <section class="all_news">
     <div class="row">
       {%- for post in site.posts | offset: 6 -%}
-      <div class="column_large_4">
+      <div class="column_large_4 column_medium_6 column_small_12">
         <figure class="news_box">
           <div class="img">
             <img src="{{ site.url }}/assets/img/{{ post.img_name }}" alt="">
