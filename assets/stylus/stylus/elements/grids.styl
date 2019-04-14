@@ -46,14 +46,15 @@ if grids.enable
     &.center
       margin: 0 auto
       float: none  
-    
   if grids.responsive
 
     column-responsive(grids.column_count, grids.column_sizes, grids.media_query, grids.column_name, $column)
-      
+     
   else
 
     for i in grids.column_sizes
       .{grids.column_name}_{i}
         @extend $column
         width: (i / grids.column_count) * 100%
+
+

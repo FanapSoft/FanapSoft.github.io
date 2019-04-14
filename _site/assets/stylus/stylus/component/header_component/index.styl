@@ -39,4 +39,46 @@
             transition: all .3s
             &:hover
                 border-color: colors.basic
-                
+.header_nav_responsive
+    a.menu_btn
+        border: none 
+        outline: none
+        background-color: transparent
+        background-image: url(../img/menu.png)
+        cursor pointer
+        background-size: 15px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        
+    ul
+        display none
+        position fixed;
+        right 0
+        left 0
+        top: 0
+        bottom: 0
+        background-color rgba(0,0,0,.9)
+        z-index 1;
+        padding: 30px;
+        li
+            text-align: center
+            float: none
+            a   
+                color: #fff
+                padding: 15px;
+                padding-right: 0 
+                padding-left: 0
+                display block
+                border:none
+                &:hover
+                    background-color: #ffffff
+                    color: #000
+                  
+                    
+
+@media only screen and (max-width: 3650px){
+  .column_large_hidden {
+    display: none;
+  }
+} 

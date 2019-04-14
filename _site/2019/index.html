@@ -11,12 +11,12 @@
 
 
 <body><header class="main_header clearfix">
-    <div class="column_large_8 column_large_push_2">
+    <div class="column_large_8  column_large_push_2">
         <div class="row">
-            <div class="logo column_large_1">
+            <div class="logo column_large_1 column_small_12">
                 <img src="http://localhost:4000/assets/img/logo.png" alt="">
             </div>
-            <div class="languge column_large_2 left">
+            <div class="languge column_large_2 column_medium_8 column_small_12 column_small_margin_bottom left">
                 <input type="text" id="search-input" class="input" onkeydown="changeView()" placeholder="جستجو ...">
                 <!-- <select name="" id="" class="input">
                     <option value="">فارسی</option>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="column_large_12 header_nav">
+            <div class="column_large_12 column_small_hidden  header_nav">
                 <ul>
                     <li class="">
 
@@ -44,11 +44,46 @@
 
 
             </div>
+
         </div>
     </div>
 </header><nav class="main_nav clearfix">
 
-    <ul class="column_large_8 column_large_push_2">
+    <div class="column_large_hidden column_medium_hidden column_small_12 header_nav_responsive">
+        <a class="menu_btn column_small_margin_right column_small_margin_top column_small_margin_bottom" ></a>
+
+
+        <ul class="">
+            <li class="">
+
+                <a href='http://localhost:4000'>صفحه اصلی</a>
+            </li>
+
+            <li>
+                <a href="http://localhost:4000/aboutus.html">درباره ما</a>
+            </li>
+
+            <li>
+                <a href="http://localhost:4000/contactus.html">تماس با ما</a>
+            </li>
+            
+
+            <li>
+                <a href="http://localhost:4000/category/playPod"> playPod </a>
+            </li>
+            
+
+            <li>
+                <a href="http://localhost:4000/category/io"> io </a>
+            </li>
+            
+
+        </ul>
+
+
+
+    </div>
+    <ul class="column_large_8 column_large_push_2 column_small_hidden">
         
 
         <li>
@@ -61,7 +96,7 @@
         </li>
         
 
-      
+
     </ul>
 </nav>
 <script>
@@ -70,13 +105,13 @@
         if (document.getElementById("search-input").value) {
             document.getElementById("search_box").style.display = "none";
             document.getElementById("main_div").style.display = "block";
-            console.log("none",document.getElementById("search-input").value);
+            console.log("none", document.getElementById("search-input").value);
         }
         else {
             document.getElementById("search_box").style.display = "block";
             document.getElementById("main_div").style.display = "none";
-            console.log|("block",document.getElementById("search-input").value);
-         
+            console.log | ("block", document.getElementById("search-input").value);
+
 
         }
     }
@@ -102,6 +137,139 @@
 <section class="all_news">
   <div class="row">
     
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column_large_4">
+      <figure class="news_box">
+        <div class="img">
+          <img src="http://localhost:4000/assets/img/news2.jpg" alt="">
+        </div>
+
+        <span class="tag">fun</span>
+        <figcaption>
+          <h2>Welcome to 2!</h2>
+          <span class="time">Feb 27, 2019</span>
+          <p>
+            <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+
+          </p>
+          <a href="http://localhost:4000//2019/02/27/welcom-to-jek" class="readmore">ادامه مطلب</a>
+        </figcaption>
+      </figure>
+    </div>
     <div class="column_large_4">
       <figure class="news_box">
         <div class="img">
