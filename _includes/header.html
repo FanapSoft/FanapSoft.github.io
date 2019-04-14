@@ -69,6 +69,7 @@
 
 
         <ul class="">
+            <li class="close"></li>
             <li class="{% if item.url == page.url %}active{% endif %}">
 
                 <a href='{{ site.url }}'>صفحه اصلی</a>
@@ -104,6 +105,10 @@
 
     </ul>
 </nav>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
 <script>
     function changeView() {
 
@@ -120,4 +125,16 @@
 
         }
     }
+    $(document).ready(function () {
+
+        
+        $(".menu_btn").on("click",function(){
+            $(".header_nav_responsive ul").show();
+        });
+        $(".close").on("click",function(){
+            $(".header_nav_responsive ul").hide();
+        });
+
+    });
+
 </script>
