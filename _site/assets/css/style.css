@@ -92,6 +92,16 @@ main.main {
   z-index: 1;
   padding: 30px;
 }
+.header_nav_responsive ul li.close {
+  background-image: url("../img/error.png");
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+  cursor: pointer;
+}
 .header_nav_responsive ul li {
   text-align: center;
   float: none;
