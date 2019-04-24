@@ -6,9 +6,10 @@ layout: default
 
   <section class="all_news">
     <div class="row">
-      {% assign custom_post = site.posts | where: "tags", "fun " %}
+      
+      {% assign custom_post_1 = site.posts | where: "category", "playPod" %}
 
-      {% for post in custom_post %}
+      {% for post in custom_post_1 %}
       <div class="column_large_4 column_medium_6 column_small_12">
         <figure class="news_box">
           <div class="img">
@@ -36,32 +37,3 @@ layout: default
 </main>
 
 
-
-<!-- 
-<section class="all_news">
-  <div class="row">
-    {% for post in page.posts %}
-    <div class="column_large_4 column_medium_6 column_small_12">
-      <figure class="news_box">
-        <div class="img">
-          <img src="{{ site.url }}/assets/img/{{ post.img_name }}" alt="">
-        </div>
-
-        <span class="tag">{{post.tags}}</span>
-        <figcaption>
-          <h2>{{post.title}}</h2>
-          <span class="time">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>
-            {{post.excerpt}}
-          </p>
-          <a href="{{ site.url }}/{{post.url}}" class="readmore">ادامه مطلب</a>
-        </figcaption>
-      </figure>
-    </div>
-    {%- endfor -%}
-
-  </div>
-  <div class="loadmore">
-    <a href="">محتوای بیشتر</a>
-  </div>
-</section> -->
