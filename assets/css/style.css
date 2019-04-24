@@ -299,6 +299,7 @@ main.main {
 .news_box figcaption .readmore {
   float: left;
   color: #ef6822;
+  border-bottom: 1px solid transparent;
 }
 .news_box figcaption .readmore:hover {
   border-bottom: 1px solid #ef6822;
