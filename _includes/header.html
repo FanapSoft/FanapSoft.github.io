@@ -5,7 +5,7 @@
                 <img src="{{ site.url }}/assets/img/logo.png" alt="">
             </div>
             <div class="languge column_large_2 column_medium_8 column_small_12 column_small_margin_bottom left">
-                <input type="text" id="search-input" class="input" onkeydown="changeView()" placeholder="جستجو ...">
+                <input type="text" id="search-input" class="input" onkeyup="changeView()" placeholder="جستجو ...">
                 <!-- <select name="" id="" class="input">
                     <option value="">فارسی</option>
                     <option value="">انگلیسی</option>
@@ -72,7 +72,7 @@
             <li class="close"></li>
             <li class="{% if item.url == page.url %}active{% endif %}">
 
-                <a href='{{ site.url }}'>صفحه اصلی</a>
+                <a href='{{ site.url }}/'>صفحه اصلی</a>
             </li>
 
             <li>
@@ -111,13 +111,13 @@
   crossorigin="anonymous"></script>
 <script>
     function changeView() {
-
-        if (document.getElementById("search-input").value) {
+        if (document.getElementById("search-input").value == "") {
             document.getElementById("search_box").style.display = "none";
             document.getElementById("main_div").style.display = "block";
             console.log("none", document.getElementById("search-input").value);
+            return;
         }
-        else {
+        else{
             document.getElementById("search_box").style.display = "block";
             document.getElementById("main_div").style.display = "none";
             console.log | ("block", document.getElementById("search-input").value);

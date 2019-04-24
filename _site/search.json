@@ -92,10 +92,6 @@
   
    {
      
-   } ,
-  
-   {
-     
         "title"    : "About",
         "category" : "cat1",
         "tags"     : "fun",
@@ -103,6 +99,10 @@
         "date"     : "Feb 26, 19",
         "img_name" : "news2.jpg",
         "content"  : "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb.comYou can find the source code for Minima at ..."
+     
+   } ,
+  
+   {
      
    } ,
   
