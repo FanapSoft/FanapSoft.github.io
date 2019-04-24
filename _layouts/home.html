@@ -10,7 +10,7 @@ layout: default
   <section class="category ">
     <header class="clearfix">
       <h2>بازی های {{ category | first }} </h2>
-      <a href="{{site.url}}/category/{{ category | first }}/">ادامه بیشتر از دسته بندی</a>
+      <a href="{{site.url}}/category/{{ category | first }}_archive.html/">ادامه بیشتر از دسته بندی</a>
     </header>
     <div class="row">
       <div class="column_large_8  column_medium_12 column_small_12 ">
@@ -33,8 +33,8 @@ layout: default
       </div>
       <div class="column_large_4  column_medium_hidden column_small_hidden">
         {%- if category.last[1] -%}
-        <div class="column_large_12">
-          <div class="news hast_margin">
+        <div class="column_large_12 no_padding margin_bottom">
+          <div class="news ">
             <figure>
               <img src="{{ site.url }}/assets/img/{{ category.last[1].img_name }}" alt="">
               <figcaption>
@@ -53,7 +53,7 @@ layout: default
         </div>
         {%- endif -%}
         {%- if category.last[2] -%}
-        <div class="column_large_12">
+        <div class="column_large_12 no_padding">
           <div class="news ">
             <figure>
               <img src="{{ site.url }}/assets/img/{{ category.last[2].img_name }}" alt="">
@@ -72,7 +72,91 @@ layout: default
           </div>
         </div>
         {%- endif -%}
+    
       </div>
+      
+    </div>
+    <div class="row others_news_box">
+      {%- if category.last[3] -%}
+      <div class="column_large_3">
+        <div class="news ">
+          <figure>
+            <img src="{{ site.url }}/assets/img/{{ category.last[2].img_name }}" alt="">
+            <figcaption>
+              <h2>
+                {{category.last[2].title}}
+              </h2>
+              <!-- <p>
+                {{ category.last[2].excerpt }}
+              </p> -->
+              <a href="{{ site.url }}/{{ category.last[2].url }}"> ادامه مطلب</a>
+
+            </figcaption>
+
+          </figure>
+        </div>
+      </div>
+      {%- endif -%}
+      {%- if category.last[4] -%}
+      <div class="column_large_3">
+        <div class="news ">
+          <figure>
+            <img src="{{ site.url }}/assets/img/{{ category.last[2].img_name }}" alt="">
+            <figcaption>
+              <h2>
+                {{category.last[2].title}}
+              </h2>
+              <!-- <p>
+                {{ category.last[2].excerpt }}
+              </p> -->
+              <a href="{{ site.url }}/{{ category.last[2].url }}"> ادامه مطلب</a>
+
+            </figcaption>
+
+          </figure>
+        </div>
+      </div>
+      {%- endif -%}
+      {%- if category.last[5] -%}
+      <div class="column_large_3">
+        <div class="news ">
+          <figure>
+            <img src="{{ site.url }}/assets/img/{{ category.last[2].img_name }}" alt="">
+            <figcaption>
+              <h2>
+                {{category.last[2].title}}
+              </h2>
+              <!-- <p>
+                {{ category.last[2].excerpt }}
+              </p> -->
+              <a href="{{ site.url }}/{{ category.last[2].url }}"> ادامه مطلب</a>
+
+            </figcaption>
+
+          </figure>
+        </div>
+      </div>
+      {%- endif -%}
+      {%- if category.last[6] -%}
+      <div class="column_large_3">
+        <div class="news ">
+          <figure>
+            <img src="{{ site.url }}/assets/img/{{ category.last[2].img_name }}" alt="">
+            <figcaption>
+              <h2>
+                {{category.last[2].title}}
+              </h2>
+              <!-- <p>
+                {{ category.last[2].excerpt }}
+              </p> -->
+              <a href="{{ site.url }}/{{ category.last[2].url }}"> ادامه مطلب</a>
+
+            </figcaption>
+
+          </figure>
+        </div>
+      </div>
+      {%- endif -%}
     </div>
 
   </section>

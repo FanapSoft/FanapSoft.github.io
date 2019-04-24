@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to 2!"
 date:   2019-02-27 12:35:05 +0330
-categories: [playPod, io]
-tags: [fun]
+category: [IO]
+tags: [PlayPod,IO]
 img_name: news2.jpg
 permalink: /2019/02/27/welcom-to-jek
 ---

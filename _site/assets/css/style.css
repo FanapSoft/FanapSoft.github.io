@@ -13,6 +13,9 @@ main.main {
   font-size: 18px;
   font-weight: bold;
 }
+.no_padding {
+  padding: 0 !important;
+}
 .main_header {
   background-color: #000;
   padding-top: 15px;
@@ -215,6 +218,8 @@ main.main {
   position: absolute;
   bottom: 0px;
   padding: 20px;
+  right: 0;
+  left: 0;
   background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.98) 0%,rgba(0,0,0,0) 100%);
   background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.98) 0%,rgba(0,0,0,0) 100%);
   background-image: -ms-linear-gradient(bottom,rgba(0,0,0,0.98) 0%,rgba(0,0,0,0) 100%);
@@ -252,6 +257,9 @@ main.main {
 }
 .category div.news.hast_margin {
   margin-bottom: 36px;
+}
+.category .others_news_box {
+  margin-top: 15px;
 }
 .news_box {
   overflow: hidden;
